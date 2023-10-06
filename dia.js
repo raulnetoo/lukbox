@@ -21,10 +21,11 @@ function drawDonutChart() {
     var options = {
       pieHole: 0.4, // Define o tamanho do buraco no meio do gráfico (0 a 1)
       pieSize: 10,
-      pieSliceBorderColor: 'black', // Define a cor da borda do gráfico como preto
+      colors: ['#1e2d3b',''],
+      pieSliceBorderColor: '', // Define a cor da borda do gráfico como preto
       pieSliceTextStyle: {
         fontSize: 12,
-        color: 'black' // Define a cor do texto das porcentagens como preto
+        color: 'white' // Define a cor do texto das porcentagens como preto
       },
       title: 'Gráfico - '+valor0,
       backgroundColor: 'transparent',
@@ -35,6 +36,7 @@ function drawDonutChart() {
       }
       
     }
+
     };
     var chart = new google.visualization.PieChart(document.getElementById('dia-chart'));
     chart.draw(data, options);
