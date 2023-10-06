@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="refresh" content="600">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Grafico Producao</title>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript" src="anual.js"></script>
-  <script type="text/javascript" src="mes.js"></script>
-  <script type="text/javascript" src="status.js"></script>
-  <script type="text/javascript" src="dia.js"></script>
- 
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <div class="grid-container">
-    <!-- Seção Anual -->
-    <div class="cel anual">
-      <div id="anual-container"></div>
-    </div>
+  <head>
+    <meta http-equiv="refresh" content="600" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Seção Status -->
-    <div class="cel status">
+    <title>Grafico Producao</title>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript" src="anual.js"></script>
+    <script type="text/javascript" src="mes.js"></script>
+    <script type="text/javascript" src="status.js"></script>
+    <script type="text/javascript" src="dia.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Seção Anual -->
+      <div class="cel anual">
+        <div id="anual-container"></div>
+      </div>
+
+      <!-- Seção Status -->
+      <div class="cel status">
         <div id="status-container"></div>
+      </div>
 
-    </div>
-
-    <!-- Seção Mês -->
-    <div class="cel mes">
+      <!-- Seção Mês -->
+      <div class="cel mes">
         <div id="mes-container"></div>
-    </div>
+      </div>
 
-        <!-- Seção Bonificação -->
-    <div class="cel bonificacao">
+      <!-- Seção Bonificação -->
+      <div class="cel bonificacao">
         <div class="label">
-            <div class="circle circle-green"></div>
-            <span>10.54 Bonificação de R$ 450,00</span>
-          </div>
-          <div class="label">
-            <div class="circle circle-light-green"></div>
-            <span>10.53 e 10.36 Bonificação de R$ 400,00</span>
-          </div>
-          <div class="label">
-            <div class="circle circle-blue"></div>
-            <span>10.35 e 10.18 Bonificação de R$ 350,00</span>
-          </div>
-          <div class="label">
-            <div class="circle circle-light-blue"></div>
-            <span>10.17 e 10 Bonificação de R$ 300,00</span>
-          </div>
-          <div class="label">
-            <div class="circle circle-orange"></div>
-            <span>9.99 e 9.82 Bonificação de R$ 250,00</span>
-          </div>
-          <div class="label">
-            <div class="circle circle-light-orange"></div>
-            <span>9.81 e 9.64 Bonificação de R$ 150,00</span>
-          </div>
-          <div class="label">
-            <div class="circle circle-red"></div>
-            <span>Sem Bonificação</span>
-          </div>
-    </div>
-    <!-- Seção Diário -->
-    <div class="cel diario">
+          <div class="circle circle-green"></div>
+          <span>10.54 Bonificação de R$ 450,00</span>
+        </div>
+        <div class="label">
+          <div class="circle circle-light-green"></div>
+          <span>10.53 e 10.36 Bonificação de R$ 400,00</span>
+        </div>
+        <div class="label">
+          <div class="circle circle-blue"></div>
+          <span>10.35 e 10.18 Bonificação de R$ 350,00</span>
+        </div>
+        <div class="label">
+          <div class="circle circle-light-blue"></div>
+          <span>10.17 e 10 Bonificação de R$ 300,00</span>
+        </div>
+        <div class="label">
+          <div class="circle circle-orange"></div>
+          <span>9.99 e 9.82 Bonificação de R$ 250,00</span>
+        </div>
+        <div class="label">
+          <div class="circle circle-light-orange"></div>
+          <span>9.81 e 9.64 Bonificação de R$ 150,00</span>
+        </div>
+        <div class="label">
+          <div class="circle circle-red"></div>
+          <span>Sem Bonificação</span>
+        </div>
+      </div>
+      <!-- Seção Diário -->
+      <div class="cel diario">
         <div id="dia-chart"></div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
