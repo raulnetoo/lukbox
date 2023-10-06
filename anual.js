@@ -41,7 +41,7 @@ function handleQueryResponseAnual(response) {
     backgroundColor: 'transparent',
     annotations: {
       textStyle: {
-        fontSize: 18,
+        fontSize: 30,
         bold: true,
         color: '#1e2d3b',
         opacity: 0.8

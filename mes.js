@@ -75,6 +75,7 @@ function handleQueryResponseMes(response) {
     annotations: {
       alwaysOutside: true,
       textStyle: {
+        fontSize:20,
         bold: true,
         opacity: 0.8,
         // auraColor: 'white'
