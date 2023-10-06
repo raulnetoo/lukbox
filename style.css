@@ -95,14 +95,12 @@ body{
   grid-row: 4 / span 2;
   display: grid;
   justify-content: center;
-  /* place-items: center; */
-  text-align: left;
 }
 
 /* Estilos para as labels */
 .label {
   display: flex;
-  margin-bottom: 1rem;
+  align-items: center;
 }
 
 /* Estilos para as bolas de cor */
