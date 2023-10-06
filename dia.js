@@ -28,14 +28,9 @@ function drawDonutChart() {
         color: 'white' // Define a cor do texto das porcentagens como preto
       },
       title: 'Gráfico - '+valor0,
-      backgroundColor: 'transparent',
-      legend:{
-        textStyle:{
-        fontSize:18,
-        
-      }
       
-    }
+      backgroundColor: 'transparent',
+     fontSize: 15,
 
     };
     var chart = new google.visualization.PieChart(document.getElementById('dia-chart'));

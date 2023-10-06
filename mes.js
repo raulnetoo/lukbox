@@ -66,6 +66,7 @@ function handleQueryResponseMes(response) {
     //   color: 'black' // Define a cor do texto das porcentagens como preto
     // },
     legend: 'none',
+    fontSize: 15,
     hAxis:{
       textStyle:{
         bold:true,
@@ -74,7 +75,6 @@ function handleQueryResponseMes(response) {
     annotations: {
       alwaysOutside: true,
       textStyle: {
-        fontSize: 18,
         bold: true,
         opacity: 0.8,
         // auraColor: 'white'
