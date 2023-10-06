@@ -1,140 +1,150 @@
-body, html {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-    background-color: #033386;
-    background-size: cover;
-    background-repeat: no-repeat;
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  background-color: #033386;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos para a grade */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 10px; /* Espaço entre as células */
-    width: 100%; /* 100% da largura da tela */
-    height: 100vh; /* 100% da altura da tela */
-  }
-  
-  /* Estilos para as células */
-  .cel {
-    /* border: 1px solid #000; */
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgba(253, 253, 253, 0.349);
-  }
-  
-  /* Estilos específicos para as áreas que você mencionou */
-  /*  local do ano*/
-  .anual {
-    grid-column: 1 / span 5;
-    grid-row: 1 / span 3;
-    display: grid;
-    place-items: center;
-   
-  }
-  #anual-container {
-    width: 100%;
-    height: 100%;
-  }
+  height: 100vh;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem; 
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
 
-  /*  local do status*/
-  .status {
-    grid-column: 6;
-    grid-row: 1 / span 3;
-    display: grid;
-    place-items: center;
-  }
-  
+/* Estilos para as células */
+.cel {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(253, 253, 253, 0.349);
+}
+
+/*  local do ano*/
+.anual {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 3;
+  display: grid;
+  place-items: center;
+}
+#anual-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*  local do status*/
+.status {
+  grid-column: 6;
+  grid-row: 1 / span 3;
+  display: grid;
+  place-items: center;
+}
+
+#status-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
 .status-circle-container {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
 }
 
 .status-circle {
-  width: 10px; /* Tamanho reduzido */
-  height: 10px; /* Tamanho reduzido */
+  width: 1rem;
+  height: 1rem; 
   border-radius: 50%;
   display: inline-block;
-  margin-right: 10px;
-  border: 0.5px solid black; /* Adiciona uma borda preta */
+  margin-right: 1rem;
+  border: .05rem solid black;
 }
 
 .status-label {
   white-space: nowrap;
 }
 
-  /*  local do mes*/
-  .mes {
-    grid-column: 1 / span 2;
-    grid-row: 4 / span 2;
-    display: grid;
-    place-items: center;
-  }
-  #mes-container {
-    width: 100%;
-    height: 100%;
-  }
+/*  local do mes*/
+.mes {
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 2;
+  display: grid;
+  place-items: center;
+}
+#mes-container {
+  width: 100%;
+  height: 100%;
+}
 
-  .bonificacao {
-    grid-column: 5 / span 2;
-    grid-row: 4 / span 2;
-    display: grid;
-    justify-content: center;
-    /* place-items: center; */
-    text-align: left;
-  }
+.bonificacao {
+  grid-column: 5 / span 2;
+  grid-row: 4 / span 2;
+  display: grid;
+  justify-content: center;
+}
 
-      /* Estilos para as labels */
-      .label {
-        display: flex;
-        margin-bottom: 10px;
+/* Estilos para as labels */
+.label {
+  display: flex;
+  align-items: center;
+}
 
+/* Estilos para as bolas de cor */
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 0.05rem solid black; /* Adiciona uma borda preta */
+}
 
-      }
-  
-      /* Estilos para as bolas de cor */
-      .circle {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin-right: 10px;
-        border: 0.5px solid black; /* Adiciona uma borda preta */
-      }
-  
-      /* Cores das bolas */
-      .circle-green {
-        background-color: #00258b;
-      }
-  
-      .circle-light-green {
-        background-color: #00ffea;
-      }
-  
-      .circle-blue {
-        background-color: #3eb606f5;
-      }
-  
-      .circle-light-blue {
-        background-color: #4bee00;
-      }
-  
-      .circle-orange {
-        background-color: #FFFF00;
-      }
-  
-      .circle-light-orange {
-        background-color: #EE7600;
-      }
+/* Cores das bolas */
+.circle-green {
+  background-color: #00258b;
+}
 
-      .circle-red {
-        background-color: #ee0000;
-      }
+.circle-light-green {
+  background-color: #00ffea;
+}
 
-  /*  local do diario*/
-  .diario {
-    grid-column: 3/ span 2;
-    grid-row: 4 / span 2;
-    display: grid;
-    place-items: center;
-  }
+.circle-blue {
+  background-color: #3eb606f5;
+}
+
+.circle-light-blue {
+  background-color: #4bee00;
+}
+
+.circle-orange {
+  background-color: #ffff00;
+}
+
+.circle-light-orange {
+  background-color: #ee7600;
+}
+
+.circle-red {
+  background-color: #ee0000;
+}
+
+/*  local do diario*/
+.diario {
+  grid-column: 3 / span 2;
+  grid-row: 4 / span 2;
+  display: grid;
+  place-items: center;
+}
