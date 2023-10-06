@@ -35,7 +35,7 @@ function handleQueryResponseAnual(response) {
 
   var options = {
     title: 'Gráfico - Anual',
-    fontSize: 15,
+    fontSize: 20,
     // width: 800,
     // height: 400,
     backgroundColor: 'transparent',

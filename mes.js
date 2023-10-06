@@ -59,6 +59,8 @@ function handleQueryResponseMes(response) {
   var options = {
     title: 'Gráfico - Mês',
     
+    
+
     backgroundColor: 'transparent',
     colors: colors, // Define as cores com base nos valores
     // pieSliceBorderColor: 'black', // Define a cor da borda do gráfico como preto
@@ -66,7 +68,7 @@ function handleQueryResponseMes(response) {
     //   color: 'black' // Define a cor do texto das porcentagens como preto
     // },
     legend: 'none',
-    fontSize: 15,
+    fontSize: 20,
     hAxis:{
       textStyle:{
         bold:true,
@@ -75,7 +77,7 @@ function handleQueryResponseMes(response) {
     annotations: {
       alwaysOutside: true,
       textStyle: {
-        fontSize:20,
+        fontSize:25,
         bold: true,
         opacity: 0.8,
         // auraColor: 'white'
