@@ -118,31 +118,31 @@ body{
 
 /* Cores das bolas */
 .circle-green {
-  background-color: #66FF66;
+  background-color: #00258b;
 }
 
 .circle-light-green {
-  background-color: #99FF33;
+  background-color: #00ffea;
 }
 
 .circle-blue {
-  background-color: #FFFF00;
+  background-color: #3eb606f5;
 }
 
 .circle-light-blue {
-  background-color: #FF9900;
+  background-color: #4bee00;
 }
 
 .circle-orange {
-  background-color: #FF6600;
+  background-color: #FFFF00;
 }
 
 .circle-light-orange {
-  background-color: #FF0000;
+  background-color: #EE7600;
 }
 
 .circle-red {
-  background-color: #990000;
+  background-color: #ff0000;
 }
 
 /*  local do diario*/
