@@ -97,6 +97,10 @@ body{
   justify-content: center;
 }
 
+.bonificacao h2 {
+  font-size: 2rem;
+}
+
 /* Estilos para as labels */
 .label {
   display: flex;
@@ -130,15 +134,15 @@ body{
 }
 
 .circle-orange {
-  background-color: #ffff00;
+  background-color: #FFFF00;
 }
 
 .circle-light-orange {
-  background-color: #ee7600;
+  background-color: #EE7600;
 }
 
 .circle-red {
-  background-color: #ee0000;
+  background-color: #ff0000;
 }
 
 /*  local do diario*/
