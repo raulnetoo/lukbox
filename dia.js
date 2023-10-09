@@ -21,7 +21,7 @@ function drawDonutChart() {
     var options = {
       pieHole: 0.4, // Define o tamanho do buraco no meio do gráfico (0 a 1)
       pieSize: 10,
-      
+
       is3D:true,
       colors: ['#1e2d3b',''],
       pieSliceBorderColor: '', // Define a cor da borda do gráfico como preto
