@@ -23,7 +23,7 @@ function handleQueryResponseAnual(response) {
   var numRows = data.getNumberOfRows();
   var data2 = new google.visualization.DataTable();
   data2.addColumn('string', 'x');
-  data2.addColumn('number', 'Producao');
+  data2.addColumn('number', 'Produção');
   data2.addColumn({ type: 'string', role: 'annotation' });
   data2.addColumn('number', 'Meta');
 
@@ -34,7 +34,7 @@ function handleQueryResponseAnual(response) {
   }
 
   var options = {
-    title: 'Gráfico - Anual',
+    title: 'GRÁFICO - ANUAL',
     fontSize: 20,
     // width: 800,
     // height: 400,
@@ -57,7 +57,7 @@ function handleQueryResponseAnual(response) {
       minValue: 0,
       maxValue: 15,
       ticks: [0, 5, 10, 15],
-      title: 'Valores'
+      title: 'PRODUÇÃO'
     },
     series: {
       0: {

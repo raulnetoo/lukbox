@@ -57,7 +57,7 @@ function handleQueryResponseMes(response) {
   }
 
   var options = {
-    title: 'Gráfico - Mês',
+    title: 'GRÁFICO - MENSAL',
     
     
 

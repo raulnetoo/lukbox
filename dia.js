@@ -28,23 +28,14 @@ function drawDonutChart() {
   data.addColumn('number', 'Producão');
   data.addColumn({type: 'string', role: 'annotation'});
 
-        data.addRow([valorDia, valor,''+valor]);
+        data.addRow(['', valor,''+valor]);
     
 
     // var valor0=data.getValue(linha0,coluna0)
 
 
     var options = {
-      // pieHole: 0.4, // Define o tamanho do buraco no meio do gráfico (0 a 1)
-      // pieSize: 10,
-      // pieSliceText: 'value',
-      // is3D:true,
       colors: ['#1e2d3b'],
-      // pieSliceBorderColor: '', // Define a cor da borda do gráfico como preto
-      // pieSliceTextStyle: {
-      //   fontSize: 12,
-      //   color: 'white' // Define a cor do texto das porcentagens como preto
-      // },
       hAxis: {
         minValue: 0,
         maxValue: 10,
@@ -60,9 +51,9 @@ function drawDonutChart() {
           // auraColor: 'white'
         },
       },
-      title: 'Gráfico - '+valorDia,
+      title: 'GRÁFICO - '+valorDia.toUpperCase(),
       legend: 'none',
-         
+      
      backgroundColor: 'transparent',
      fontSize: 20,
 
