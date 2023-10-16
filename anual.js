@@ -19,6 +19,9 @@ function handleQueryResponseAnual(response) {
 
   var data = response.getDataTable();
 
+  const dataAtual = new Date();
+  const anoAtual = dataAtual.getFullYear();
+  
   var coluna1 = 1;
   var numRows = data.getNumberOfRows();
   var data2 = new google.visualization.DataTable();
@@ -34,7 +37,7 @@ function handleQueryResponseAnual(response) {
   }
 
   var options = {
-    title: 'GRÁFICO - ANUAL',
+    title: 'GRÁFICO - ANUAL '+anoAtual,
     titleTextStyle: {bold: true},
     fontSize: 20,
     // width: 800,
