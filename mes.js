@@ -32,7 +32,7 @@ function handleQueryResponseMes(response) {
   data.addColumn('number', 'Producão');
   data.addColumn({type: 'string', role: 'annotation'});
 
-        data.addRow([valorMes, valor,''+valor]);
+        data.addRow([valorMes.toUpperCase(), valor,''+valor]);
 
   // Define as cores com base nos valores dos dados
   var colors = [];
