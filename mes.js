@@ -58,7 +58,7 @@ function handleQueryResponseMes(response) {
 
   var options = {
     title: 'GRÁFICO - MENSAL',
-    
+    titleTextStyle: {bold: true},
     
 
     backgroundColor: 'transparent',

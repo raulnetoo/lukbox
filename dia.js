@@ -52,6 +52,7 @@ function drawDonutChart() {
         },
       },
       title: 'GRÁFICO - '+valorDia.toUpperCase(),
+      titleTextStyle: {bold: true},
       legend: 'none',
       
      backgroundColor: 'transparent',

@@ -21,7 +21,7 @@ function handleQueryResponseStatus(response) {
     // Cria um elemento <h2> para o título "Status"
     var titleElement = document.createElement('h2');
     titleElement.textContent = 'STATUS';
-    titleElement.style.fontSize = '15px'; // Define o tamanho da fonte como 15 pixels
+    titleElement.style.fontSize = '2.5rem'; // Define o tamanho da fonte como 15 pixels
 
     // Adiciona o título ao container
     container.appendChild(titleElement);
