@@ -20,8 +20,12 @@ function drawDonutChart() {
     var colunaDia=0
 
 
+   dayName = new Array ("DOMINGO", "SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO")
+
   var valor=data.getValue(linhaValor,colunaValor)
-  var valorDia=data.getValue(linhaDia,colunaDia)
+  var valorDia= data.getValue(linhaDia,colunaDia)
+  const date = new Date(valorDia).toLocaleDateString('en-GB');
+  const semana = dayName[valorDia.getDay()];
 
   var data = new google.visualization.DataTable();
   data.addColumn('string', 'x');
@@ -51,7 +55,7 @@ function drawDonutChart() {
           // auraColor: 'white'
         },
       },
-      title: 'GRÁFICO - '+valorDia.toUpperCase(),
+      title: 'GRÁFICO - '+semana+' '+date,
       titleTextStyle: {bold: true},
       legend: 'none',
       
