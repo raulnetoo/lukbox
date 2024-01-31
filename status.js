@@ -55,7 +55,7 @@ function getStatusColor(status) {
     } else if (numericStatus >= 10.36) {
         return '#00ffea'; 
     } else if (numericStatus >= 10.18) {
-        return '#3eb606f5'; 
+        return '#40b40d'; 
     } else if (numericStatus >= 10) {
         return '#4bee00'; 
     } else if (numericStatus >= 9.82) {

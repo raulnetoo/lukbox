@@ -43,7 +43,7 @@ function handleQueryResponseMes(response) {
     } else if (value >= 10.36 && value <= 10.53) {
       colors.push('#00ffea');
     } else if (value >= 10.18 && value <= 10.35) {
-      colors.push('#3eb606f5');
+      colors.push('#40b40d');
     } else if (value >= 10 && value <= 10.17) {
       colors.push('#4bee00');
     } else if (value >= 9.82 && value <= 9.99) {
